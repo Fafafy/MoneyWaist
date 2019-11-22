@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'wrestlemania';
+    src: url(WRESTLEMANIA.woff);
+}
+@font-face {
+      font-family: 'Roboto';
+      src: url(Roboto.woff);
+}
+
+body{
+  background-color: #202020;
+  font-family: 'Roboto';
+  color: grey;
+  letter-spacing: 0.05em;
+}
+
+p{
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,52 @@
+@keyframes errorshow {
+  0% {opacity: 0}
+  10% {opacity: 1}
+  70%{opacity: 0}
+  100% {opacity: 0}
+}
+
+
+
+body{
+  text-align: center;
+  font-size: 30px;
+}
+
+#winderror{
+  font-family:Roboto;
+  color: FireBrick;
+
+  width:200px;
+  border-radius: 5px;
+  border-color: #F5C7CC;
+  border-width: 5px;
+
+  position:fixed;
+  right:10px;
+  top : 10px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #F8D7DA;
+
+  animation-name: errorshow;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  opacity: 0;
+}
+
+#error{
+  font-size: 0.5em;
+  margin-left:0px;
+  margin-top:5px;
+  padding: 0px;
+}
+
+#title{
+  color: white;
+  font-family: 'Roboto';
+  font-size: 60px;
+  margin-bottom: -80px;
+  letter-spacing: 0.05em;
+}
