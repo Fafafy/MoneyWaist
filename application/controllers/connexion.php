@@ -29,10 +29,11 @@ class connexion extends CI_Controller {
 							session_destroy();
 						};
 						session_start();
-						$_SESSION["id"] = $this->input->post('id');
+					  $_SESSION['id']= $this->input->post('id');
+						print_r($_SESSION);
 						$data['pwd'] = $this->input->post('pwd');
 				    $this->load->view('templates\meta');
-				    $this->load->view('entree',$data);
+						$this->load->view('entree',$data);
 
 				} else {
 

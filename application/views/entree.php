@@ -40,7 +40,7 @@
       await sleep(2000);
       document.getElementById('bjr').style.opacity = 0;
       await sleep(2000);
-      window.location.replace("<?php echo base_url()?>gestion");
+      window.location.href = "<?php echo base_url()?>gestion";
     };
   };
 

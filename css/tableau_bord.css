@@ -1,0 +1,8 @@
+#launchFade{
+  opacity: 0;
+  transition: 1s;
+}
+
+li{
+  border: 2;
+}

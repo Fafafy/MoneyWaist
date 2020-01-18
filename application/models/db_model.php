@@ -16,6 +16,18 @@ class Db_model extends CI_Model {
     return $this->db->query($query,array($id))->result_array();
   }
 
+
+/*      Requêtes pour les achats      */
+public function get_listedepenses($id) {
+  $query = "SELECT * FROM DEPENSES WHERE PASS = ? ORDER BY DATE DESC";
+  return $this->db->query($query,array($id))->result_array();
+}
+
+public function get_listebalances($id) {
+  $query = "SELECT * FROM BALANCES WHERE PASS = ? ";
+  return $this->db->query($query,array($id))->result_array();
+}
+
 }
 /*      Requêtes pour les fournisseurs */
 /*
